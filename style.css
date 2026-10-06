@@ -1,4 +1,249 @@
-* Ad Placeholders Styling */
+ode
+All
+Images
+Videos
+News
+Maps
+Books
+Finance
+Based on the screenshots you provided, it looks like you are setting up an ad network (PopAds) on a website you hosted for free using Netlify.
+Your Netlify project (anime-only-stream.netlify.app) is active, and you have submitted it to PopAds for review. Currently, your site status is "Pending Approval", and PopAds has a countdown timer showing about 2 days left before their team reviews it.
+Here is your step-by-step guide on what you need to do next to get everything running and start earning:
+Step 1: Wait for PopAds Approval
+PopAds manually or automatically reviews websites to ensure they comply with their terms.
+Do not try to contact their support to speed this up, as their notification explicitly states it will not help.
+Check back in about 48 hours. Once approved, your site status will change from "Pending Approval" to "Approved" or "Active".
+Step 2: Generate Your Ad Code
+Once PopAds approves your website, you need to get the advertising code to place on your site.
+Log into your PopAds Dashboard.
+Look at the left-hand menu (visible in your first screenshot) and click on Code Generator under the "Publisher's Panel".
+Select your website (Anime Only Stream) from the dropdown menu.
+Choose the type of ad code you want (the standard, recommended code is usually best for beginners).
+Click Generate Code and copy the block of Javascript code provided.
+Step 3: Insert the Code into Your Netlify Project
+Because PopAds usually works via pop-unders, you need to insert this code into the <head> or <body> tag of your website source code.
+Open your website project files on your computer (the code repository connected to your GitHub account).
+Open your main HTML file (usually index.html).
+Paste the PopAds Javascript code right before the closing </head> tag or </body> tag.
+Save the file.
+Step 4: Deploy the Changes to Netlify
+Since your Netlify project says "Deploys from GitHub" (visible in your second screenshot), updating your site is very simple:
+Commit and Push your updated index.html file to your GitHub repository.
+Netlify will automatically detect the new changes and rebuild your site within a few seconds.
+Once the deploy is finished, the ads will live on your website.
+Step 5: Test and Monitor Earnings
+Open your website (anime-only-stream.netlify.app) in a browser (or use an Incognito tab).
+Click anywhere on the page to see if a pop-under ad triggers.
+Once visitors start coming to your site and triggering ads, your statistics under Today's Earnings, Total Earnings, and Avg. Daily Earnings on your PopAds dashboard will start moving past $0.00.
+To help you with the next step, tell me:
+Do you know how to edit the HTML code of your website?
+What framework or tools did you use to build your anime streaming layout (e.g., plain HTML/JS, React, or a template)?
+
+
+
+
+Based on your new screenshot, you have successfully navigated to the Code Generator section on PopAds.
+However, you cannot generate the code just yet. The red warning message at the top states: "Please wait for your website to be reviewed. This might take up to 24 hours."
+Even though you can click the orange "Generate Code" button, the system will not give you the active ad script until their team officially approves your site (Anime Only Stream).
+What you should do right now:
+Bookmark this page or remember how you got here.
+Wait for the review to finish. Keep an eye on your email linked to PopAds, as they usually send a notification once your site is approved.
+Once approved, the red warning message will disappear, and clicking Generate Code will reveal the custom JavaScript snippet you need.
+While you wait for PopAds to approve your site, let's get ready for the next step. Could you tell me:
+Do you know how to edit your website files (like index.html) on your computer or through GitHub?
+Are you using a code editor like VS Code, or are you editing files directly online?
+Knowing this will let me give you exact steps on how to paste the code the moment it unlocks!
+
+
+
+
+That makes things much easier! Since you are managing everything directly from your Android device, you don't need a computer at all. You can edit your website files completely online through the GitHub website in your mobile browser.
+Because your Netlify site automatically updates whenever you change your GitHub files, you can add your ad code with just a few taps once it is approved.
+Here is how you can prepare to edit your site on Android:
+How to Edit Your Website Files on Android
+Open your browser (like Chrome) and go to github.com.
+Log into your account and open the repository (project folder) named anime-only-stream.
+Look for your main website file, which is usually named index.html, and tap on it.
+Tap the pencil icon (Edit button) in the top-right corner of the file view to open the built-in text editor.
+Scroll down to the very bottom of the text and look for the </body> or </html> tags.
+Once PopAds approves your site, you will copy their code, paste it right above that closing tag, and tap Commit changes to save.
+While we wait for PopAds to approve your site, let me know:
+Can you successfully log into your GitHub account and find your index.html file?
+Did you write the HTML code yourself, or did you use a pre-made template/generator?
+If you can find the file, you'll be 100% ready the moment the ad code unlocks!
+
+
+
+
+Perfect, you found it! You are in the exact right place. I see your index.html file right there in your GitHub repository list.
+Since PopAds is still reviewing your website, let's practice opening the editor so you know exactly what to do the second your ad code becomes available.
+How to open your editor right now:
+Tap directly on the name index.html in your list.
+Once the file opens and shows your website's code, look toward the top right of the file box for a pencil icon ✏️. Tap it to enter edit mode.
+Scroll all the way down to the bottom of your code.
+What to look for at the bottom:
+You want to find the tag that looks like this: </body>.
+When your PopAds account gets approved, you will copy their code block, paste it on a blank line directly above that </body> tag, and then hit the green "Commit changes..." button at the top to save it. Netlify will handle the rest!
+While you wait for PopAds to approve your site, would you like me to show you how to add a backup ad network (like Adsterra or ylliX) just in case PopAds rejects your site or takes too long?
+
+
+
+
+Think of this like setting up a billboard on an empty plot of land you own.
+Right now, you are waiting for the advertising company (PopAds) to look at your land and say, "Yes, this looks good. Here is your billboard."
+Once they approve it, here is exactly what you will do:
+1. Get the Ad Code (The Billboard)
+When PopAds approves your site, they will give you a block of text (code).
+You will copy that text, just like copying a message on WhatsApp.
+2. Open Your Website File (The Land)
+On the GitHub screen you just showed me, tap on index.html.
+Tap the Pencil icon ✏️ at the top to open it up so you can type in it.
+3. Paste the Code
+Scroll all the way to the very bottom of the page.
+Look for the word </body>.
+Tap right above it, make a new line, and paste the PopAds code there.
+4. Save and Finish
+Tap the green "Commit changes" button at the top to save.
+As soon as you save, Netlify automatically takes that code and puts the ads on your live website. Anyone who visits your site will see the ads, and you will start making money!
+Would you like me to tell you what signs to look for so you know the exact moment your account gets approved?
+
+
+
+
+No, you accidentally tapped on the README.md file instead of index.html!
+The # Anime- text you see there is just the title of your documentation file, which is why it looks empty.
+How to get to the right place:
+Tap the Back button on your phone to return to your main file list.
+Look carefully at the list and tap directly on the words index.html (it is the third file in your list).
+Once that opens, tap the Pencil icon ✏️ at the top to edit it.
+That is where you will see your website's structural code and where you will eventually paste your PopAds script.
+Let me know when you have successfully opened the index.html file so we can make sure you see your actual website code!
+Try without personalization
+
+
+
+
+Yes, you are in the exact right place now! You have successfully opened the index.html file, and I can see your website's code layout.
+Since PopAds is still reviewing your account, you do not need to change anything yet. However, you can see how your website is built. It has a <head> section at the top and a <body> section where your content lives.
+What you will do when PopAds approves your site:
+Tap the small pencil/edit icon at the top right of that code box to open the editor.
+Scroll all the way down to the very bottom of this file.
+Look for the closing </body> tag (it will be near the very last line).
+Paste your PopAds code right on the line above </body>.
+Tap Commit changes... at the top to save it.
+For now, you just need to wait for PopAds to complete their review, which usually takes up to 24 to 48 hours.
+While you wait for PopAds to unlock your ad code, would you like me to help you add layout features to your anime streaming website, such as a trending grid section or episode cards?
+Try without personalization
+
+
+
+
+Yes, that is the correct menu! You opened it by clicking the three dots ... on the right side.
+To edit this file directly in your browser on Android, tap on In place right under "Edit file...".
+Once you tap In place, the screen will change into an active text box where you can type or paste text.
+Reminder for later:
+Since PopAds is still reviewing your website, do not change or paste anything yet. Once they send your approval email, you will:
+Come back to this exact screen.
+Tap In place.
+Scroll to the very bottom of your code box.
+Paste the PopAds snippet directly above the </body> tag.
+Save your progress.
+While you wait for PopAds to approve your account, would you like to add some placeholders or fake ads to your index.html layout so you can see how your content grid looks with spaces for ads?
+Try without personalization
+
+
+
+
+Great! Adding fake ad boxes right now is a smart move. It helps you design your website layout so your content and actual ads look perfect later on.
+Since you have that menu open, go ahead and tap In place. Then, we will replace your current code with an updated version that adds a Trending Grid for your anime episodes and explicit Ad Placeholders.
+Step 1: Copy this updated code
+Copy the entire block of code below:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Watch App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Anime<span>Zone</span></div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Series</a>
+        </nav>
+    </header>
+
+    <!-- Top Ad Placeholder -->
+    <div class="ad-placeholder banner-ad">
+        <p>Target Banner Ad Space (728x90)</p>
+    </div>
+
+    <main class="container">
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h2>Featured Spotlight</h2>
+                <p>Watch the latest trending anime episodes layout preview.</p>
+            </div>
+        </section>
+
+        <!-- Content and Sidebar Grid Layout -->
+        <div class="main-layout-grid">
+            
+            <!-- Trending Anime Grid Section -->
+            <section class="trending-section">
+                <h3>Trending Episodes</h3>
+                <div class="anime-grid">
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">EP 1</div>
+                        <h4>Anime Title 1</h4>
+                    </div>
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">EP 2</div>
+                        <h4>Anime Title 2</h4>
+                    </div>
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">EP 3</div>
+                        <h4>Anime Title 3</h4>
+                    </div>
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">EP 4</div>
+                        <h4>Anime Title 4</h4>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sidebar Ad Placeholder -->
+            <aside class="sidebar-ad-section">
+                <div class="ad-placeholder sidebar-ad">
+                    <p>Sidebar Ad Space (300x250)</p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Bottom Ad Placeholder -->
+    <div class="ad-placeholder banner-ad">
+        <p>Bottom Banner Ad Space (728x90)</p>
+    </div>
+
+</body>
+</html>
+Use code with caution.
+Step 2: Paste and Save on GitHub
+In your Android browser, clear out everything currently inside the text box that opened up after clicking In place.
+Paste the code block you just copied into the box.
+Scroll down slightly or look at the top right for a green button that says Commit changes... and tap it.
+Tap the final Commit changes confirmation button to save.
+Step 3: Make your style.css look good
+To make these ad placeholders actually look like distinct boxes on your screen, we need to add a bit of styling.
+Go back to your main file list, tap on style.css, click the three dots ..., select In place, and add these styles to the bottom of your file:
+css
+/* Ad Placeholders Styling */
 .ad-placeholder {
     background-color: #222;
     border: 2px dashed #ff9900;
@@ -62,4 +307,674 @@
     border-radius: 4px;
     margin-bottom: 8px;
     color: #ccc;
+}
+Use code with caution.
+Once you commit both files, check your live Netlify website link! You will see a beautiful anime content grid with bright orange placeholder boxes showing exactly where your ads will display.
+Let me know:
+Were you able to successfully paste and commit both files?
+Would you like me to show you how to link real stream buttons inside those anime episode cards next?
+Try without personalization
+
+
+
+
+No, it will not affect your review at all.
+PopAds has a very open and beginner-friendly approval process. When their team looks at your website, they are looking for specific violations like malware, viruses, completely empty pages, or hidden fraud.
+Updating your website layout to look nicer and adding temporary text boxes will actually help your review because it proves your website is active, under development, and has a clear structure. 
+
+Slideshare
+Why this is completely safe:
+PopAds does not check your design style: They do not care about your specific HTML or CSS layout choices. 
+They do not mind text placeholders: Adding words like "Banner Ad Space" is standard practice in web building. It lets the reviewer see exactly where content will reside once the site goes live. 
+It avoids multiple ad networks conflicting: Since you are just styling empty boxes with CSS rather than adding a different ad company's real javascript codes, it won't conflict with PopAds' evaluation parameters. 
+
+PopAds
+You can safely tap In place, update both your index.html and style.css files, and commit the changes right now!
+Let me know if you would like me to help you copy and paste the codes, or if you want to add real anime titles and images to your new grid options once you save the changes!
+Try without personalization
+
+
+
+
+Awesome! Your new layout is officially live on your Netlify link (anime-only-stream.netlify.app). Netlify automatically updates itself within seconds of a GitHub commit, so if you open your website in your browser right now, you will see your new anime grid layout along with the orange placeholder boxes.
+Now that the layout is ready, your website looks structured and active, which is perfect for your upcoming PopAds review.
+What should we do next?
+Since you have your structural files open and we are waiting for PopAds, we can use this time to make your streaming app look like a real website. Here are a few options:
+Add real anime titles and pictures: We can replace "Anime Title 1" with real shows (like Naruto, One Piece, or Demon Slayer) and link actual thumbnail images so it looks authentic.
+Build out a video streaming section: We can create a layout for a video player page so users can click on an episode card and go to a layout where they can watch.
+Set up a database structure blueprint: We can talk about how you plan to store your video links later on.
+Let me know which feature you'd like to work on next to continue building your layout!
+Try without personalization
+
+
+
+
+No, PopAds will not suspend your account if you take more than 14 days to copy the code. 
+
+PopAds
+Once your website is officially approved, it stays active in their system. They do not force you to copy or paste the ad script within a specific timeframe, and they do not penalize you for taking your time. 
+
+AdPushup
+ +1
+Here is how their system actually handles timing and inactivity:
+1. Your Code Never Expires
+Once the status changes to approved, your custom ad script is generated and sits on your dashboard permanently. You can safely log in weeks or months later to copy it without any issues. 
+
+PopAds
+ +1
+2. No Traffic Penalties
+Some strict ad networks close accounts if you do not send them traffic immediately. PopAds does not do this. They have no minimum traffic requirements, making them very relaxed for brand-new websites.
+3. What Actually Causes Suspensions?
+You only have to worry about suspension or deactivation if you break their specific terms of service: 
+
+PopAds
+Generating fake, bot, or proxy traffic to your link.
+Intentionally clicking your own pop-under ads repeatedly to inflate your stats.
+Changing the core behavior of their Javascript code block without permission.
+Hosting illegal material or malware directly on your website files. 
+
+ClickPatrol
+ +1
+Take all the time you need to design your website structure on GitHub. Your PopAds profile is completely safe while you wait for the review countdown to finish!
+Would you like me to show you how to set up a navigation menu or a search bar structure in your index.html file while the review processes?
+Try without personalization
+
+
+
+
+Let's add the Trending Grid panel layout to make your homepage look like a professional streaming platform.
+We will use simple text titles for popular shows like Naruto and Demon Slayer, and add mock "Watch Now" buttons to each card so you can see how users will navigate your site.
+Step 1: Copy this updated code
+This code replaces the empty cards with actual anime titles and action buttons:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Watch App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Anime<span>Zone</span></div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Series</a>
+        </nav>
+    </header>
+
+    <!-- Top Ad Placeholder -->
+    <div class="ad-placeholder banner-ad">
+        <p>Target Banner Ad Space (728x90)</p>
+    </div>
+
+    <main class="container">
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h2>Featured Spotlight</h2>
+                <p>Watch the latest trending anime episodes layout preview.</p>
+            </div>
+        </section>
+
+        <!-- Content and Sidebar Grid Layout -->
+        <div class="main-layout-grid">
+            
+            <!-- Trending Anime Grid Section -->
+            <section class="trending-section">
+                <h3>Trending Episodes</h3>
+                <div class="anime-grid">
+                    
+                    <!-- Card 1 -->
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">Naruto Shuden</div>
+                        <h4>Naruto: Episode 1</h4>
+                        <a href="#" class="watch-btn">Watch Now</a>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">One Piece</div>
+                        <h4>One Piece: Episode 1100</h4>
+                        <a href="#" class="watch-btn">Watch Now</a>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">Demon Slayer</div>
+                        <h4>Demon Slayer: S4 Ep 1</h4>
+                        <a href="#" class="watch-btn">Watch Now</a>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">Jujutsu Kaisen</div>
+                        <h4>Jujutsu Kaisen: Episode 24</h4>
+                        <a href="#" class="watch-btn">Watch Now</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Sidebar Ad Placeholder -->
+            <aside class="sidebar-ad-section">
+                <div class="ad-placeholder sidebar-ad">
+                    <p>Sidebar Ad Space (300x250)</p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Bottom Ad Placeholder -->
+    <div class="ad-placeholder banner-ad">
+        <p>Bottom Banner Ad Space (728x90)</p>
+    </div>
+
+</body>
+</html>
+Use code with caution.
+Step 2: Update index.html on GitHub
+Go back to your index.html file on GitHub.
+Open the menu (...), select In place, and delete everything inside.
+Paste the code block above into the empty box.
+Scroll down, tap Commit changes..., and confirm.
+Step 3: Add Button Styles to style.css
+To make the "Watch Now" buttons look like bright, clickable streaming links, add this code block to the very bottom of your style.css file using the same In place editor:
+css
+/* Watch Button Styling */
+.watch-btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background 0.2s ease;
+}
+
+.watch-btn:hover {
+    background-color: #e68a00;
+}
+Use code with caution.
+Once you commit both files, check your Netlify link again! Your app will look like a functional, real-world streaming page with labeled cards and streaming buttons.
+Let me know when you are done saving these changes. Once they are live, should we:
+Build a video player template page for when users click "Watch Now"?
+Look into creating a video link scraper blueprint to help you pull stream feeds automatically later on?
+Try without personalization
+
+
+
+
+Let's create the video player page! When a user clicks your "Watch Now" button, they should be taken to a clean screen with a large video player and another space for ads.
+To do this on Android, we need to create a brand new file inside your GitHub repository named watch.html.
+Here is exactly how to do it step by step from the screen you are looking at right now:
+Step 1: Create the new file on GitHub
+Look at your current GitHub screen. Tap the + (plus sign) button located right next to the search icon on the right side of the "main" branch dropdown box.
+Select Create new file.
+In the box that says Name your file..., type exactly: watch.html
+Step 2: Copy and paste the video player code
+Copy this entire block of HTML code:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watching Anime - AnimeZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Anime<span>Zone</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Series</a>
+        </nav>
+    </header>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="ad-placeholder banner-ad">
+        <p>Target Banner Ad Space (728x90)</p>
+    </div>
+
+    <main class="container">
+        <div class="main-layout-grid">
+            
+            <!-- Video Player Section -->
+            <section class="player-section">
+                <div class="video-container-box">
+                    <!-- Replace the src URL with your real video streaming embed link later -->
+                    <iframe src="https://youtube.com" allowfullscreen></iframe>
+                </div>
+                <h2 class="video-title">Now Playing: Episode 1 Layout Test</h2>
+                <p class="video-description">You are viewing the video streaming interface template layout. Real stream links can be attached here.</p>
+            </section>
+
+            <!-- Sidebar Ad Placeholder -->
+            <aside class="sidebar-ad-section">
+                <div class="ad-placeholder sidebar-ad">
+                    <p>Sidebar Ad Space (300x250)</p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+</body>
+</html>
+Use code with caution.
+Paste this code directly into the large file text box on your GitHub screen.
+Scroll down, tap Commit changes..., and tap the green Commit changes confirmation button to save it.
+Step 3: Link your "Watch Now" button to this page
+Now we need to tell your homepage to open this new player page when a user clicks the button.
+Go back to your main file list and tap on index.html.
+Open the three dots ... menu and select In place.
+Find your first anime card in the code. Look for this line:
+<a href="#" class="watch-btn">Watch Now</a>
+Change the # symbol to watch.html so it looks exactly like this:
+<a href="watch.html" class="watch-btn">Watch Now</a>
+Click Commit changes... at the top and confirm to save it.
+Step 4: Add Video Player Styling to style.css
+To make sure your video scales correctly on mobile phones, tap on your style.css file, choose In place, and add these responsive styles to the very bottom:
+css
+/* Responsive Video Player Styling */
+.video-container-box {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.video-container-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-title {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.video-description {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+Use code with caution.
+Commit your changes.
+Once saved, open up your Netlify website link, tap on the Watch Now button under your first anime card, and watch it seamlessly open your new video layout player interface!
+Let me know when you finish saving these files! Once it's running, would you like to:
+Learn how to connect real, external anime video links into your player?
+Set up a database structure outline to organize your episodes?
+Try without personalization
+
+
+
+
+Here is the exact step-by-step guide to building your video player page directly from the GitHub screen you have open right now.
+Step 1: Create the new file (watch.html)
+Look at your screen. Next to the search icon on the right side of the main branch dropdown box, tap the + (plus sign) button.
+Select Create new file.
+In the box that says "Name your file...", type exactly:
+text
+watch.html
+Use code with caution.
+Step 2: Paste the Video Player Layout Code
+Copy this entire block of HTML code:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watching Anime - AnimeZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Anime<span>Zone</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Series</a>
+        </nav>
+    </header>
+
+    <!-- Top Banner Ad Space -->
+    <div class="ad-placeholder banner-ad">
+        <p>Target Banner Ad Space (728x90)</p>
+    </div>
+
+    <main class="container">
+        <div class="main-layout-grid">
+            
+            <!-- Video Player Display Box -->
+            <section class="player-section">
+                <div class="video-container-box">
+                    <!-- This iframe acts as your video screen -->
+                    <iframe src="https://youtube.com" allowfullscreen></iframe>
+                </div>
+                <h2 class="video-title">Now Playing: Episode 1</h2>
+                <p class="video-description">You are viewing the video streaming interface template layout. Real stream links can be attached here.</p>
+            </section>
+
+            <!-- Sidebar Ad Space -->
+            <aside class="sidebar-ad-section">
+                <div class="ad-placeholder sidebar-ad">
+                    <p>Sidebar Ad Space (300x250)</p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+</body>
+</html>
+Use code with caution.
+Paste this code directly into the large blank text box on your GitHub edit screen.
+Scroll down, tap Commit changes..., and tap the green confirmation button to save it.
+Step 3: Connect your "Watch Now" Button to the Player
+Now we need to link the button on your homepage to this new screen.
+Go back to your main file list page and tap on index.html.
+Open the three-dot menu ... on the right side and select In place.
+Find your first anime card in the code. Look for this line:
+html
+<a href="#" class="watch-btn">Watch Now</a>
+Use code with caution.
+Replace the # symbol with watch.html so it looks exactly like this:
+html
+<a href="watch.html" class="watch-btn">Watch Now</a>
+Use code with caution.
+Click the green Commit changes... button at the top to save it.
+Step 4: Add Video Player Box Layout Styles
+To make sure your video player box shapes correctly on mobile screens, we need to add the layout styles to your CSS file.
+Go back to your main file list page and tap on style.css.
+Open the three-dot menu ... on the right side and select In place.
+Scroll all the way down to the very end of your file, add a new line, and paste this styling code:
+css
+/* Responsive Video Player Layout styling */
+.video-container-box {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Screen Ratio */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.video-container-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-title {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.video-description {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+Use code with caution.
+Tap the green Commit changes... button at the top and confirm to save.
+Step 5: Test Your Live Site
+Open your Netlify link (anime-only-stream.netlify.app) in your web browser. Tap Watch Now on your first anime card, and it will take you straight to your new video player setup.
+Let me know when you have saved those three files! Once it's running, should we:
+Look at how to fetch or inject real embed video links for your stream player?
+Create a simple dropdown menu structure for selecting different episodes?
+Try without personalization
+
+
+
+
+Perfect! You are at Step 1 of the layout guide.
+Here is exactly what you need to fill into this screen:
+Step 1: Name the file
+Tap inside the blue box that says "Name your file..." at the top.
+Type exactly:
+text
+watch.html
+Use code with caution.
+Step 2: Paste the layout code
+Tap inside the large dark area where it says "Enter file contents here" (on line 1).
+Copy this entire block of HTML layout code and paste it inside that box:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watching Anime - AnimeZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Anime<span>Zone</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Series</a>
+        </nav>
+    </header>
+
+    <!-- Top Banner Ad Space -->
+    <div class="ad-placeholder banner-ad">
+        <p>Target Banner Ad Space (728x90)</p>
+    </div>
+
+    <main class="container">
+        <div class="main-layout-grid">
+            
+            <!-- Video Player Display Box -->
+            <section class="player-section">
+                <div class="video-container-box">
+                    <!-- This iframe acts as your video screen -->
+                    <iframe src="https://youtube.com" allowfullscreen></iframe>
+                </div>
+                <h2 class="video-title">Now Playing: Episode 1</h2>
+                <p class="video-description">You are viewing the video streaming interface template layout. Real stream links can be attached here.</p>
+            </section>
+
+            <!-- Sidebar Ad Space -->
+            <aside class="sidebar-ad-section">
+                <div class="ad-placeholder sidebar-ad">
+                    <p>Sidebar Ad Space (300x250)</p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+</body>
+</html>
+Use code with caution.
+Step 3: Save it
+Once the text is pasted, tap the green "Commit changes..." button near the top.
+Confirm the save on the next small popup option that appears.
+Let me know when you have saved this file so we can move on to Step 3 and link your button to it!
+Let me know when you have successfully saved watch.html so we can look at the next step:
+Updating your index.html file to link the buttons
+Adding the new styling to style.css
+Try without personalization
+
+
+
+
+Take your time typing the name and pasting the code inside that window. Once you have tapped Commit changes... and saved it, we will be ready for the next step.
+When you are done, here is what we will do next:
+Go back to index.html to link your "Watch Now" button to this new page.
+Go to style.css to paste the responsive styling so the player box shapes nicely on your screen.
+Let me know whenever you have successfully saved the file!
+Let me know when you are ready to continue:
+Have you successfully clicked Commit changes... on the watch.html file?
+Do you want to move straight to editing index.html next?
+Try without personalization
+
+
+
+
+Beautiful! watch.html is officially saved in your files list. You did that perfectly.
+Now we need to do Step 3 and link your buttons so they actually open this new page when clicked.
+Step 3: Link your buttons in index.html
+Tap directly on index.html from the list on your screen.
+Tap the three dots ... on the right side and select In place.
+Clear out everything inside the file and paste this clean, updated code block that links all your buttons to the video player:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Watch App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Anime<span>Zone</span></div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Series</a>
+        </nav>
+    </header>
+
+    <!-- Top Ad Placeholder -->
+    <div class="ad-placeholder banner-ad">
+        <p>Target Banner Ad Space (728x90)</p>
+    </div>
+
+    <main class="container">
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h2>Featured Spotlight</h2>
+                <p>Watch the latest trending anime episodes layout preview.</p>
+            </div>
+        </section>
+
+        <div class="main-layout-grid">
+            
+            <!-- Trending Anime Grid Section -->
+            <section class="trending-section">
+                <h3>Trending Episodes</h3>
+                <div class="anime-grid">
+                    
+                    <!-- Card 1 -->
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">Naruto Shippuden</div>
+                        <h4>Naruto: Episode 1</h4>
+                        <a href="watch.html" class="watch-btn">Watch Now</a>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">One Piece</div>
+                        <h4>One Piece: Episode 1100</h4>
+                        <a href="watch.html" class="watch-btn">Watch Now</a>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">Demon Slayer</div>
+                        <h4>Demon Slayer: S4 Ep 1</h4>
+                        <a href="watch.html" class="watch-btn">Watch Now</a>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="anime-card">
+                        <div class="thumbnail-poster">Jujutsu Kaisen</div>
+                        <h4>Jujutsu Kaisen: Episode 24</h4>
+                        <a href="watch.html" class="watch-btn">Watch Now</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Sidebar Ad Placeholder -->
+            <aside class="sidebar-ad-section">
+                <div class="ad-placeholder sidebar-ad">
+                    <p>Sidebar Ad Space (300x250)</p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Bottom Ad Placeholder -->
+    <div class="ad-placeholder banner-ad">
+        <p>Bottom Banner Ad Space (728x90)</p>
+    </div>
+
+</body>
+</html>
+Use code with caution.
+Scroll down, tap Commit changes..., and confirm the save.
+Let me know when you have pushed that file! Once it's done, should we move onto Step 4 to fix your style.css layout styles?
+Try without personalization
+
+
+
+
+Fantastic work! You are moving through this incredibly fast.
+Now for the last technical step to make the video display box size itself flawlessly on mobile phone screens. We need to add the layout styles to your CSS file.
+Step 4: Add Video Player Layout Styles
+Tap the Back arrow or navigate back to your main files list.
+Tap directly on style.css.
+Open the three-dot menu ... on the right side and select In place.
+Scroll all the way down to the very end of your file, start a new line, and paste this styling block:
+css
+/* Responsive Video Player Layout styling */
+.video-container-box {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Screen Ratio */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.video-container-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-title {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.video-description {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.5;
 }
