@@ -65,10 +65,9 @@
         const playerStatus = document.getElementById('player-status');
 
         episodeSelect.addEventListener('change', function() {
-            const selectedNum = episodeSelect.value;
             const selectedText = episodeSelect.options[episodeSelect.selectedIndex].text;
             
-            // Instantly update the text on screen
+            // Instantly update the layout text strings on mobile view
             currentTitle.textContent = "Now Playing: " + selectedText;
             playerStatus.textContent = "▶ Loading " + selectedText + "...";
         });
