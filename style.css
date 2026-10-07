@@ -1,6 +1,6 @@
-/* General Base Layout Styles */
+/* General Base Layout Styles (Pure Black & Charcoal Theme) */
 body {
-    background-color: #0c0c0c;
+    background-color: #050505;
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,26 +16,27 @@ body {
 
 /* Navbar Layout */
 .navbar {
-    background-color: #141414;
+    background-color: #0a0a0a;
     padding: 15px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #222;
+    border-bottom: 2px solid #ff4500; /* Hellfire Orange Line */
 }
 
 .navbar .logo {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
+    text-shadow: 0 0 10px #ff4500;
 }
 
 .navbar .logo span {
-    color: #ff9900;
+    color: #ff3333; /* Crimson Red */
 }
 
 .navbar nav a {
-    color: #ccc;
+    color: #888;
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
@@ -43,9 +44,9 @@ body {
 
 /* Ad Placeholders Styling */
 .ad-placeholder {
-    background-color: #1b1b1b;
-    border: 2px dashed #ff9900;
-    color: #ff9900;
+    background-color: #0f0f0f;
+    border: 2px dashed #ff4500;
+    color: #ff4500;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +55,7 @@ body {
     margin: 15px auto;
     text-align: center;
     border-radius: 4px;
+    text-shadow: 0 0 5px #ff4500;
 }
 
 .banner-ad {
@@ -85,11 +87,48 @@ body {
 .video-container-box {
     position: relative;
     width: 100%;
-    height: 220px;
-    background: #111;
+    height: 250px;
+    background: #000;
     border-radius: 8px;
-    border: 1px solid #333;
+    border: 2px solid #ff3333; /* Crimson border frame */
     overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.3);
+}
+
+/* Ghost Rider Skull Container & Visuals */
+.skull-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #260902 0%, #000000 70%);
+}
+
+.hellfire-skull {
+    font-size: 55px;
+    text-shadow: 0 0 20px #ff4500, 0 0 40px #ff3333;
+    animation: flamePulse 1.5s infinite alternate;
+    margin-bottom: 12px;
+}
+
+#player-status {
+    color: #ff4500;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255, 69, 0, 0.6);
+}
+
+/* Pulsing Flame Animation */
+@keyframes flamePulse {
+    0% {
+        transform: scale(0.95);
+        text-shadow: 0 0 15px #ff4500, 0 0 30px #ff3333;
+    }
+    100% {
+        transform: scale(1.05);
+        text-shadow: 0 0 25px #ffaa00, 0 0 50px #ff4500, 0 0 70px #ff3333;
+    }
 }
 
 .video-title {
@@ -99,7 +138,7 @@ body {
 }
 
 .video-description {
-    color: #aaa;
+    color: #666;
     font-size: 14px;
     margin-top: 8px;
     line-height: 1.5;
@@ -109,9 +148,9 @@ body {
 .episode-panel-container {
     margin: 20px 0;
     padding: 15px;
-    background: #141414;
+    background: #0a0a0a;
     border-radius: 6px;
-    border: 1px solid #222;
+    border: 1px solid #1a1a1a;
 }
 
 .episode-row-grid {
@@ -122,8 +161,8 @@ body {
 }
 
 .ep-block-card {
-    background: #1b1b1b;
-    border: 1px solid #ff3333;
+    background: #111111;
+    border: 1px solid #ff4500; /* Hellfire Orange border outlines */
     border-radius: 4px;
     width: 75px;
     height: 70px;
@@ -136,8 +175,9 @@ body {
 }
 
 .ep-block-card:hover, .ep-block-card.active {
-    background: #ff3333;
-    border-color: #ff5555;
+    background: linear-gradient(135deg, #ff4500, #ff3333);
+    border-color: #ffaa00;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
 }
 
 .ep-num {
@@ -148,7 +188,7 @@ body {
 
 .ep-time-ago {
     font-size: 10px;
-    color: #aaa;
+    color: #888;
     margin-top: 2px;
 }
 
