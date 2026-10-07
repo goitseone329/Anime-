@@ -24,19 +24,22 @@
     <main class="container">
         <div class="main-layout-grid">
             
-            <!-- Video Player Display Box -->
+            <!-- Main Content Area -->
             <section class="player-section">
+                
+                <!-- 1. The Screen Box (Stays completely separate) -->
                 <div class="video-container-box">
                     <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:#111; color:#ff9900; font-weight:bold; position:absolute; top:0; left:0; border-radius:8px;">
                         <span id="player-status">▶ Waiting for Stream Link...</span>
                     </div>
                 </div>
                 
-                <!-- Interactive Title and Dropdown Menu -->
+                <!-- 2. Interactive Title Elements -->
                 <h2 class="video-title" id="current-episode-title">Now Playing: Episode 1</h2>
                 
-                <div class="selector-container">
-                    <label for="episode-select" style="color: #aaa; font-weight: bold; margin-right: 10px;">Choose Episode:</label>
+                <!-- 3. Separate Dropdown Picker Layout Box -->
+                <div class="selector-container" style="margin: 20px 0; background: #141414; padding: 10px; border-radius: 4px; border: 1px solid #333;">
+                    <label for="episode-select" style="color: #aaa; font-weight: bold; margin-right: 10px; font-size: 14px;">Choose Episode:</label>
                     <select id="episode-select" class="episode-dropdown">
                         <option value="1">Episode 01 - The Journey Begins</option>
                         <option value="2">Episode 02 - New Powers Awaken</option>
@@ -48,7 +51,7 @@
                 <p class="video-description">You are viewing the video streaming interface template layout. Real stream links can be attached here.</p>
             </section>
 
-            <!-- Sidebar Ad Space -->
+            <!-- Sidebar Ad Space Box -->
             <aside class="sidebar-ad-section">
                 <div class="ad-placeholder sidebar-ad">
                     <p>Sidebar Ad Space (300x250)</p>
@@ -66,8 +69,6 @@
 
         episodeSelect.addEventListener('change', function() {
             const selectedText = episodeSelect.options[episodeSelect.selectedIndex].text;
-            
-            // Instantly update the layout text strings on mobile view
             currentTitle.textContent = "Now Playing: " + selectedText;
             playerStatus.textContent = "▶ Loading " + selectedText + "...";
         });
