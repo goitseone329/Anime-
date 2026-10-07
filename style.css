@@ -1,8 +1,106 @@
+/* General Base Layout Styles */
+body {
+    background-color: #0c0c0c;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Navbar Layout */
+.navbar {
+    background-color: #141414;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #222;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .logo span {
+    color: #ff9900;
+}
+
+.navbar nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Ad Placeholders Styling */
+.ad-placeholder {
+    background-color: #1b1b1b;
+    border: 2px dashed #ff9900;
+    color: #ff9900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 15px auto;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.banner-ad {
+    width: 100%;
+    max-width: 728px;
+    height: 90px;
+}
+
+.sidebar-ad {
+    width: 300px;
+    height: 250px;
+}
+
+/* Layout Grid Structure */
+.main-layout-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Video Player Display Container */
+.video-container-box {
+    position: relative;
+    width: 100%;
+    height: 220px; /* Forces a fixed, clean height on mobile screens */
+    background: #111;
+    border-radius: 8px;
+    border: 1px solid #333;
+    overflow: hidden;
+}
+
+.video-title {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.video-description {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
 /* Interactive Dropdown Selector Styling */
 .selector-container {
     margin: 15px 0;
-    display: flex;
-    align-items: center;
 }
 
 .episode-dropdown {
@@ -13,11 +111,6 @@
     font-size: 14px;
     font-weight: bold;
     border-radius: 4px;
+    width: 100%;
     outline: none;
-    cursor: pointer;
-}
-
-.episode-dropdown option {
-    background-color: #141414;
-    color: #fff;
 }
