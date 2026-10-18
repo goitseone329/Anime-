@@ -3,103 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watching Anime - AnimeZone (Ghost Rider Edition)</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Anime Heaven - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">Anime<span>Zone</span> 🔥</div>
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Movies</a>
-            <a href="#">Series</a>
-        </nav>
+
+    <header>
+        <div class="logo-box" id="logoHomeBtn">ANIME</div>
+        <input type="text" class="search-bar" id="searchEngineInput" placeholder="Search anime titles...">
     </header>
 
-    <!-- Top Banner Ad Space -->
-    <div class="ad-placeholder banner-ad">
-        <p>Target Banner Ad Space (728x90)</p>
+    <div class="container">
+        <div class="section-title" id="gridTitleDisplay">Popular Anime</div>
+        <div id="trending-anime-grid" class="anime-grid">
+            <!-- Cards load here instantly -->
+        </div>
     </div>
 
-    <main class="container">
-        <div class="main-layout-grid">
-            
-            <!-- Video Player Display Box -->
-            <section class="player-section">
-                <div class="video-container-box ghost-rider-bg">
-                    <!-- Glowing Hellfire Skull Graphics Overlay Placeholder -->
-                    <div class="skull-container">
-                        <div class="hellfire-skull">💀</div>
-                        <span id="player-status">▶ Waiting for Hellfire Link...</span>
-                    </div>
-                </div>
-                
-                <!-- Interactive Title Elements -->
-                <h2 class="video-title" id="current-episode-title">Now Playing: Episode 1</h2>
-                
-                <!-- AnimeHeaven Style Episode Grid Panel Layout -->
-                <div class="episode-panel-container">
-                    <h3 style="color: #888; font-size: 16px; margin-bottom: 12px; text-align: left;">Episodes:</h3>
-                    <div class="episode-row-grid">
-                        
-                        <!-- Episode 5 Block Card -->
-                        <div class="ep-block-card" onclick="changeEpisode('5', 'Episode 05 - Ultimate Battle')">
-                            <span class="ep-num">5</span>
-                            <span class="ep-time-ago">2 h ago</span>
-                        </div>
-                        
-                        <!-- Episode 4 Block Card -->
-                        <div class="ep-block-card" onclick="changeEpisode('4', 'Episode 04 - Alliance Formed')">
-                            <span class="ep-num">4</span>
-                            <span class="ep-time-ago">5 d ago</span>
-                        </div>
-                        
-                        <!-- Episode 3 Block Card -->
-                        <div class="ep-block-card" onclick="changeEpisode('3', 'Episode 03 - The Shadow Rival')">
-                            <span class="ep-num">3</span>
-                            <span class="ep-time-ago">5 d ago</span>
-                        </div>
-                        
-                        <!-- Episode 2 Block Card -->
-                        <div class="ep-block-card" onclick="changeEpisode('2', 'Episode 02 - New Powers Awaken')">
-                            <span class="ep-num">2</span>
-                            <span class="ep-time-ago">5 d ago</span>
-                        </div>
-                        
-                        <!-- Episode 1 Block Card -->
-                        <div class="ep-block-card active" onclick="changeEpisode('1', 'Episode 01 - The Journey Begins')">
-                            <span class="ep-num">1</span>
-                            <span class="ep-time-ago">5 d ago</span>
-                        </div>
-
-                    </div>
-                </div>
-
-                <p class="video-description">You are viewing the video streaming interface template layout. Real stream links can be attached here.</p>
-            </section>
-
-            <!-- Sidebar Ad Space Box -->
-            <aside class="sidebar-ad-section">
-                <div class="ad-placeholder sidebar-ad">
-                    <p>Sidebar Ad Space (300x250)</p>
-                </div>
-            </aside>
-
-        </div>
-    </main>
-
-    <!-- Simple JavaScript to Change Episode Title Instantly -->
     <script>
-        function changeEpisode(epNumber, epFullTitle) {
-            document.getElementById('current-episode-title').textContent = "Now Playing: " + epFullTitle;
-            document.getElementById('player-status').textContent = "▶ Loading Episode " + epNumber + "...";
+        // High-performance static database collection
+        const ANIME_DATABASE = [
+            { mal_id: 20, title: "Naruto", type: "TV", episodes: 220, score: "7.99", icon: "🍥" },
+            { mal_id: 1735, title: "Naruto: Shippuden", type: "TV", episodes: 500, score: "8.26", icon: "⚡" },
+            { mal_id: 21, title: "One Piece", type: "TV", episodes: 1100, score: "8.75", icon: "☠️" },
+            { mal_id: 30276, title: "One Punch Man", type: "TV", episodes: 12, score: "8.51", icon: "👊" },
+            { mal_id: 38000, title: "Demon Slayer", type: "TV", episodes: 26, score: "8.49", icon: "⚔️" },
+            { mal_id: 5114, title: "Fullmetal Alchemist: B", type: "TV", episodes: 64, score: "9.10", icon: "🦾" },
+            { mal_id: 1535, title: "Death Note", type: "TV", episodes: 37, score: "8.62", icon: "📓" },
+            { mal_id: 16498, title: "Attack on Titan", type: "TV", episodes: 25, score: "8.54", icon: "🧱" },
+            { mal_id: 44511, title: "Chainsaw Man", type: "TV", episodes: 12, score: "8.57", icon: "🪚" },
+            { mal_id: 51009, title: "Jujutsu Kaisen Season 2", type: "TV", episodes: 23, score: "8.82", icon: "👁️" }
+        ];
 
-            document.querySelectorAll('.ep-block-card').forEach(card => {
-                card.classList.remove('active');
+        const gridContainer = document.getElementById("trending-anime-grid");
+        const gridTitleDisplay = document.getElementById("gridTitleDisplay");
+        const searchInput = document.getElementById("searchEngineInput");
+        const logoHomeBtn = document.getElementById("logoHomeBtn");
+
+        function renderGrid(animeList, headingText) {
+            gridTitleDisplay.textContent = headingText;
+            gridContainer.innerHTML = "";
+
+            if (animeList.length === 0) {
+                gridContainer.innerHTML = '<div class="loading-text">No matches found.</div>';
+                return;
+            }
+
+            animeList.forEach(anime => {
+                const card = document.createElement("div");
+                card.className = "anime-card";
+                
+                card.innerHTML = `
+                    <div class="card-image-wrapper">
+                        <span>${anime.icon}</span>
+                    </div>
+                    <div class="card-details">
+                        <span class="banner-title">${anime.type} (${anime.episodes})</span>
+                        <h3>${anime.title}</h3>
+                        <div class="rating">⭐ ${anime.score}</div>
+                    </div>
+                `;
+                
+                // Clicking a card forwards the user to watch.html passing parameters securely in the URL link
+                card.addEventListener("click", () => {
+                    window.location.href = `watch.html?id=${anime.mal_id}&title=${encodeURIComponent(anime.title)}&eps=${anime.episodes}`;
+                });
+
+                gridContainer.appendChild(card);
             });
-            event.currentTarget.classList.add('active');
         }
-    </script>
 
+        function initApp() {
+            searchInput.value = "";
+            renderGrid(ANIME_DATABASE, "Popular Anime");
+        }
+
+        searchInput.addEventListener("input", (e) => {
+            const query = e.target.value.trim().toLowerCase();
+            if (!query) {
+                renderGrid(ANIME_DATABASE, "Popular Anime");
+                return;
+            }
+            const filtered = ANIME_DATABASE.filter(anime => anime.title.toLowerCase().includes(query));
+            renderGrid(filtered, `Search Results for: "${e.target.value}"`);
+        });
+
+        logoHomeBtn.addEventListener("click", initApp);
+        window.addEventListener("DOMContentLoaded", initApp);
+    </script>
 </body>
 </html>
