@@ -3,47 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watching Anime - AnimeZone</title>
+    <title>Anime Heaven - Watch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">Anime<span>Zone</span></div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Movies</a>
-            <a href="#">Series</a>
-        </nav>
+
+    <header>
+        <!-- Clicking the logo returns the beginner client smoothly back to the homepage grid -->
+        <div class="logo-box" onclick="window.location.href='index.html'">ANIME</div>
     </header>
 
-    <!-- Top Banner Ad Space -->
-    <div class="ad-placeholder banner-ad">
-        <p>Target Banner Ad Space (728x90)</p>
+    <div class="player-container">
+        <div class="player-wrapper">
+            <div id="placeholder-screen" class="player-placeholder" style="display: none;">
+                <p>No media stream targeting currently loaded.</p>
+            </div>
+            <iframe id="video-embed-frame" allowfullscreen></iframe>
+        </div>
+        
+        <div class="player-details">
+            <h2 id="statusMsg">Loading Title Details...</h2>
+            <p id="subMsg">Streaming Client: Connecting to Frame Resolver...</p>
+            
+            <!-- Dynamic Episode Selector Hub Module Component -->
+            <div class="episode-control-panel" id="episodeControlPanel" style="display: block;">
+                <div class="episode-panel-title">Select Episode</div>
+                <div class="episode-grid" id="episodeButtonGrid"></div>
+            </div>
+        </div>
     </div>
 
-    <main class="container">
-        <div class="main-layout-grid">
-            
-            <!-- Video Player Display Box -->
-            <section class="player-section">
-                <div class="video-container-box">
-                    <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:#111; color:#ff9900; font-weight:bold; position:absolute; top:0; left:0; border-radius:8px;">
-                        <span>▶ Waiting for Stream Link...</span>
-                    </div>
-                </div>
-                <h2 class="video-title">Now Playing: Episode 1</h2>
-                <p class="video-description">You are viewing the video streaming interface template layout. Real stream links can be attached here.</p>
-            </section>
+    <script>
+        const videoEmbedFrame = document.getElementById("video-embed-frame");
+        const episodeButtonGrid = document.getElementById("episodeButtonGrid");
+        const statusMsg = document.getElementById("statusMsg");
+        const subMsg = document.getElementById("subMsg");
 
-            <!-- Sidebar Ad Space -->
-            <aside class="sidebar-ad-section">
-                <div class="ad-placeholder sidebar-ad">
-                    <p>Sidebar Ad Space (300x250)</p>
-                </div>
-            </aside>
+        // Open-source embedding provider routing mechanism 
+        function buildStreamingEmbedLink(malId, episodeNum) {
+            return `https://vidsrc.to{malId}/${episodeNum}`;
+        }
 
-        </div>
-    </main>
+        // Active execution routine to trigger the media panel elements
+        function mountPlayerStream(malId, titleName, episodeNum) {
+            videoEmbedFrame.src = buildStreamingEmbedLink(malId, episodeNum);
+            statusMsg.textContent = `Playing: ${titleName}`;
+            subMsg.textContent = `Streaming Client: Active (Episode ${episodeNum})`;
 
+            // Toggle active highlighting state classes layout across target elements
+            document.querySelectorAll(".episode-btn").forEach(btn => {
+                btn.classList.remove("active");
+                if (parseInt(btn.getAttribute("data-ep")) === episodeNum) {
+                    btn.classList.add("active");
+                }
+            });
+        }
+
+        // Framework initial engine extraction setup on window ready
+        window.addEventListener("DOMContentLoaded", () => {
+            // Read incoming parameter strings out of the browser address link frame
+            const urlParameters = new URLSearchParams(window.location.search);
+            const animeId = urlParameters.get("id");
+            const animeTitle = urlParameters.get("title") || "Unknown Anime";
+            const totalEpisodes = parseInt(urlParameters.get("eps")) || 12;
+
+            if (!animeId) {
+                statusMsg.textContent = "Error: No Anime Configuration Targeted";
+                subMsg.textContent = "Please return to the homepage and select an item.";
+                return;
+            }
+
+            // Assemble the clickable button grid elements dynamically inside DOM components
+            episodeButtonGrid.innerHTML = "";
+            for (let i = 1; i <= totalEpisodes; i++) {
+                const epBtn = document.createElement("button");
+                epBtn.className = "episode-btn";
+                epBtn.textContent = i;
+                epBtn.setAttribute("data-ep", i);
+                
+                epBtn.addEventListener("click", () => {
+                    mountPlayerStream(animeId, animeTitle, i);
+                });
+
+                episodeButtonGrid.appendChild(epBtn);
+            }
+
+            // Auto-launch the player engine targeting Episode 1 upon initial configuration entry load
+            mountPlayerStream(animeId, animeTitle, 1);
+        });
+    </script>
 </body>
 </html>
