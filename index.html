@@ -16,12 +16,12 @@
     <div class="container">
         <div class="section-title" id="gridTitleDisplay">Popular Anime</div>
         <div id="trending-anime-grid" class="anime-grid">
-            <!-- Cards load here instantly -->
+            <!-- Your cards will load here instantly with no player box blocking them -->
         </div>
     </div>
 
     <script>
-        // High-performance static database collection
+        // Your clean internal database collection
         const ANIME_DATABASE = [
             { mal_id: 20, title: "Naruto", type: "TV", episodes: 220, score: "7.99", icon: "🍥" },
             { mal_id: 1735, title: "Naruto: Shippuden", type: "TV", episodes: 500, score: "8.26", icon: "⚡" },
@@ -64,7 +64,7 @@
                     </div>
                 `;
                 
-                // Clicking a card forwards the user to watch.html passing parameters securely in the URL link
+                // Routes seamlessly to watch.html when tapped
                 card.addEventListener("click", () => {
                     window.location.href = `watch.html?id=${anime.mal_id}&title=${encodeURIComponent(anime.title)}&eps=${anime.episodes}`;
                 });
